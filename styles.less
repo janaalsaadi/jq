@@ -1,0 +1,54 @@
+
+@marg : auto;
+.size(@w, @h){
+width:@w;
+height:@h;
+}
+@disply:none;
+.pos(@left,@top,@position){
+
+    left:@left;
+    top:@top;
+    position:@position;
+}
+
+
+.container{
+    background-color:pink;
+    .size(400px,300px);
+    margin:@marg;
+      display:flex;  
+    
+    .main{
+        background-color:skyblue;
+        .size(380px,280px);
+        position:relative;
+        top:3%;
+        margin:@marg;   
+    .pay{
+      margin:@marg;
+      .pos(110px,100px,absolute);
+    }
+    #images{
+      display:flex;
+      justify-content: space-between;
+      .pos(40px,180px,absolute);
+    }
+
+.a{
+  display: @disply;
+}
+
+
+.v{
+  display: @disply;
+}
+
+
+.m{
+  display: @disply;
+}
+
+
+}
+}
